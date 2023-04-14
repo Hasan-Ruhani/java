@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Object</title>
+    </head>
+    <body>
+        
+
+
+        <script>
+            var myPhone = {
+                brand: "Samsung Ultra",
+                screen: "6.1",
+                frontCamera: "15 MP",
+                backCamera: "30 MP",
+                color: "violet",
+                ram: "6 GB",
+                rom: "128 GB"
+            };
+        
+            for (var item in myPhone) {
+                document.write(item + ': ' + myPhone[item] + '<br>');
+            }
+        </script>
+        
+
+        
+        <!-- <script>
+            var myPhone = {
+                brand: "Samsung Ultra",
+                screen: "6.1",
+                frontCamera: "15 MP",
+                backCamera: "30 MP",
+                color: "violet",
+                ram: "6 GB",
+                rom: "128 GB"
+            }
+            document.write(myPhone.brand +'  '+ myPhone.color);
+            // document.write(myPhone['color']);
+        </script> -->
+    </body>
+</html>
