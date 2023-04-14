@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Array Filter</title>
+    </head>
+    <body>
+        
+        <script>
+            var num = [10, 20, 30, 40, 50, 60, 70, 80];                          //filtering for number
+            var result = num.filter(function(filterNum){
+                return filterNum > 50;
+            });
+            var inc = num.includes(30);                                         //if have this number/string
+            document.write(result + "<br>" + inc);
+
+            document.write("<br>");
+
+            var num1 = [10, 20, 30, 40, 50, 60, 70, 80];                          //find for one number
+            var result1 = num1.find(function(value){
+                return value > 30;
+            });
+            document.write(result1);
+
+            document.write("<br>");
+
+            var arr = ["apple", "banana", "cherry", "date", "elderberry"];      //filtering for string
+            var result2 = arr.filter((str) => str.length > 5);
+            document.write(result2);
+
+            document.write("<br>");
+
+            var string = ["apple", "banana", "cherry", "data", "elderberry", "ball"];   //feltring for letters
+            var result3 = string.filter((str) => str.startsWith ("b"));
+            document.write(result3);
+        </script>
+    </body>
+</html>
