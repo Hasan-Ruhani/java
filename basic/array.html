@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+    <body>
+        
+
+        <script>
+            var i;
+            var category = [
+                "Dhaka",
+                "Khulna",
+                "Rangpur",
+                "Rajshahi",
+                "Gopalganj"
+            ];
+            // for(i = 0; i < category.length; i++){               //for loop
+            //     document.write(category[i] + "<br>");
+            // }
+            for (var item in category){                            //for in loop
+                document.write(category[item] + "<br>");
+            }
+            document.write("<br>");
+
+            var let1 = ['A', 'B', 'C', 'D'];                       //for array to array concat
+            var let2 = ['E', 'F', 'G', 'H'];
+            var result = let1.concat(let2);
+            document.write(result);
+
+            document.write("<br>" + "<br>");
+
+            var name = "Masud Hasan";                              //convart string to array
+            var nameArray = Array.from(name);
+            document.write(nameArray[6]);
+        </script>
+    </body>
+</html>
