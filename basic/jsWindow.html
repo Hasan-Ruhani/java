@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Window Example</title>
+</head>
+<body>
+	<button onclick="objAlert()">Alert</button> <br> <br>
+	<button onclick="objConfirm()">Confirm</button> <br> <br>
+	<button onclick="objPrompt()">Prompt</button> <br> <br>
+	<button onclick="openWindow()">Open</button> <br> <br>
+	<button onclick="closeWindow()">Close</button>
+
+	<script>
+		let myWindow = null;
+
+		function objAlert() {
+			alert("Accept Cookies");
+		}
+
+		function objConfirm() {
+			let result = confirm("Are you sure?");
+			document.write(result);
+		}
+
+		function objPrompt() {
+			let result = prompt("Type your name");
+			document.write(result);
+		}
+
+		function openWindow() {
+			myWindow = window.open("https://www.example.com", "_blank", "width=500,height=500");
+		}
+
+		function closeWindow() {
+			if (myWindow != null) {
+				myWindow.close();
+			} else {
+				alert("Window not found or already closed.");
+			}
+		}
+
+        setTimeout(function(){
+            alert("Alert after 5 sec")
+        },5000)
+	</script>
+</body>
+</html>
