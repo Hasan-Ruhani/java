@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title> Find ID </title>
+    </head>
+    <body>
+        <h1 class="myClass"></h1>
+        <h2 Class="myClass"></h2>
+        <button Class="myClass"></button>
+        
+        <!-- <h1 name="myName"></h1>
+        <h2 name="myName"></h2>
+        <button name="myName"></button> -->
+
+        <script>
+            var fElement = document.getElementsByClassName('myClass');
+            var sElement = document.getElementsByClassName('myClass');
+            var tElement = document.getElementsByClassName('myClass');
+            
+            // var fElement = document.getElementsByName('myName');
+            // var sElement = document.getElementsByName('myName');
+            // var tElement = document.getElementsByName('myName');
+
+            fElement[1].innerHTML="First Element";
+            sElement[0].innerHTML="Second Element";
+            tElement[2].innerHTML="Third Element";
+            
+            // fElement[1].innerHTML="First Element";
+            // sElement[2].innerHTML="Second Element";
+            // tElement[0].innerHTML="Third Element";
+        </script>
+    </body>
+</html>
