@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Input</title>
+    </head>
+    <body>
+        <input type="number" id="num1"> <br> <br>
+        <input type="number" id="num2"> <br> <br>
+        <button onclick="myFunction()">Add</button> <br> <br>
+        <h4 id="equation"></h4>
+
+        <script>
+            function myFunction(){
+                let equ1 = document.getElementById('num1').value;
+                let equ2 = document.getElementById('num2').value;
+                let z = parseFloat(equ1) + parseFloat(equ2);
+                alert(z);
+
+                let add = document.getElementById('equation');
+                add.innerHTML = z;
+            }
+        </script>
+    </body>
+</html>
