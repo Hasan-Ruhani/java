@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Creat Order List</title>
+    </head>
+    <body>
+
+        <ul id="myItems"></ul> <br> <br>
+        <input id="myInput"> <br> <br>
+        <button onclick="addItem()">Add</button>
+
+        <script>
+            function addItem(){
+                var itemValue = document.getElementById('myInput').value;
+
+                var listItem = document.createElement('li');
+                listItem.innerHTML = itemValue;
+
+                var myItems = document.getElementById('myItems');
+                myItems.appendChild(listItem);
+            }
+        </script>
+    </body>
+</html>
