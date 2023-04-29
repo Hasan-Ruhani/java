@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Window</title>
+    </head>
+    <body>
+        <button onclick="myFunction()">New Tab</button>
+
+        <script>
+            function myFunction(){
+                let w = window.open();
+                w.document.open();
+                w.document.write("<h4>Welcome to new window</h4>");
+                w.document.close();
+            }
+        </script>
+    </body>
+</html>
