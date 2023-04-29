@@ -5,11 +5,17 @@
     <body>
         <h1 id="myID"></h1>
         <button onclick="demo()">Click</button>
+        <button onclick="replace()">Click</button>
         <script>
             function demo(){
-                var click = "my name is Hasan";
+                var msg = document.getElementById('myID');
+                msg.innerHTML = "WELCOME";
+            }
 
-                document.getElementsByID.innerHTML = click;
+            function replace(){
+                document.open('text/html' , 'replace');
+                document.write("<p>Please Wait</p>");
+                document.close();
             }
         </script>
     </body>
